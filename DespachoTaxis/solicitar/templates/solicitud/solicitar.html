@@ -1,0 +1,20 @@
+{% extends 'layouts/layout.html' %}
+
+
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+    
+    <h1>{{title}}</h1>
+
+     <div class="formulario_taxi"> 
+        
+        <form method="POST" sytle="text-align: center;" class="formulario_taxi">
+            {% csrf_token %}
+            <p class="formulario_taxi"> {{formulario}} </p>
+            <input type="submit" value="Solicitar" style="margin-left: 50%">
+        </form>
+
+    </div>
+    
+{% endblock %}

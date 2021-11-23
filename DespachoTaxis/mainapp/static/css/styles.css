@@ -1,0 +1,395 @@
+/*Estilos generales*/
+body{
+	background-color: #fdf3b7;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Arial, Helvetica;
+    text-decoration: none;
+}
+
+.box p,
+.box h2,
+.box h3,
+.box ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.box ul,
+.box ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+
+
+#map {
+    height: 60%;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+
+/*Estilos cabecera*/
+
+header {
+    width: 1212px;
+    height: 140px;
+    background-color: #23282b;
+    margin: 0 auto;
+}
+
+#logotipo {
+    width: 50%;
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#logotipo img {
+    display: block;
+    width: 80px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+#logotipo h1 {
+    display: block;
+    float: left;
+    margin-top: 35px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: #e7eb10;
+}
+
+
+/* Estilos barra de navegación */
+
+nav {
+    width: 1250px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #1b1e1f;
+    border: 1px solid #333333;
+    box-shadow: 0px 22px 22px gray;
+    font-size: 15px;
+}
+
+nav>ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav>ul>li {
+    line-height: 40px;
+    float: left;
+}
+
+nav>ul>li>a {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #d1d4d6;
+}
+
+nav>ul>li>a:hover {
+    background: #e7eb10;
+    box-shadow: 0px 0px 5px black inset;
+    color: black;
+    transition: 300ms;
+}
+
+nav>ul>li>ul {
+    display: none;
+    position: absolute;
+    color: white;
+    text-align: left;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+    color: white;
+    margin: 0px;
+    list-style: none;
+}
+
+nav>ul>li:hover>ul>li {
+    background: #F2F1F0;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+    transition: all 300ms;
+}
+
+nav>ul>li:hover>ul>li a {
+    color: #666;
+    transition: all 300ms;
+}
+
+nav>ul>li:hover>ul>li:hover {
+    background-color: #2ba977;
+}
+
+nav>ul>li:hover>ul>li:hover a {
+    display: block;
+    color: white;
+}
+
+.barra {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.esquina-izquierda {
+    display: block;
+    border-left: 20px solid transparent;
+    border-top: 10px solid #2b2f30;
+    float: left;
+}
+
+.esquina-derecha {
+    display: block;
+    border-right: 20px solid transparent;
+    border-top: 10px solid #2b2f30;
+    float: right;
+}
+
+.relleno-barra {
+    display: block;
+    width: 1210px;
+    height: 10px;
+    background: #2b2f30;
+    float: left;
+}
+
+
+/* Estilos contenido central */
+
+#content {
+    width: 1210px;
+    min-height: 930px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+#contentMap {
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.box {
+    background: white;
+    width: 90%;
+    min-height: 930px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+
+.box .image {
+    float: left;
+    width: 45%;
+    margin-right: 40px;
+}
+
+.box .image img {
+    width: 100%;
+}
+
+.box a {
+    transition: all 300ms;
+    color: #444;
+}
+
+.box a:hover {
+    color: #1f7e58;
+}
+
+.box form {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.box form input,
+.box form label {
+    display: block;
+    padding: 5px;
+    padding-left: 0px;
+}
+
+.box form input[type="text"],
+.box form input[type="email"],
+.box form input[type="password"],
+.box form textarea,
+.box form select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.box form select {
+    width: 100px;
+    padding: 5px;
+}
+
+.box form input[type="submit"],
+.box form input[type="button"],
+.box form button {
+    padding: 10px;
+    margin-top: 5px;
+    background: #e7eb10;
+    border: 1px solid black;
+    color: black;
+    transition: 300ms all;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 160px;
+}
+
+.box form input[type="submit"]:hover,
+.box form input[type="button"]:hover,
+.box form button:hover {
+    cursor: pointer;
+    background: #f0d123;
+}
+
+.title {
+    color: #444;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.date {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: gray;
+}
+
+.content {
+    line-height: 25px;
+    text-align: justify;
+}
+
+.article-item {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    clear: both;
+}
+
+.article-item .image {
+    width: 200px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+}
+
+.article-item .image img {
+    height: 200px;
+}
+
+.article-item .data {
+    float: left;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.article-item h2 {
+    font-size: 25px;
+    display: block;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article-item span.date {
+    font-size: 15px;
+    display: block;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 10px;
+    background-color: rgb(180, 69, 69);
+    color: white;
+    border: 1px solid black;
+    display: block;
+    margin-top: 15px;
+    width: 100px;
+    text-align: center;
+}
+
+footer {
+    width: 1250px;
+    background-color: #1b1e1f;
+    border: 1px solid #333;
+    color: #d1d4d6;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 20px gray;
+}
+
+.rojo {
+    color: red;
+}
+
+.message,
+.alert-success,
+.alert {
+    padding: 20px;
+    background: #1f7e58;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.alert-warning {
+    background: #972824;
+}
+
+.formulario_taxi form{
+	text-align: left;
+}
+ 
+.formulario_taxi form p{
+	color:black; 
+	margin-left: 60px; 
+	margin-top: 10px;
+}
+
+.formulario_taxi form input{
+	color: unset;
+}
+    
+.errorlist{
+    list-style: none;
+    background-color:rgb(235, 70, 70);
+    font-weight: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}

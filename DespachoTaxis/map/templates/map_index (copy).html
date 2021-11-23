@@ -1,0 +1,32 @@
+{% load static%}
+<!-- Var for the js -->
+<script>
+    var taxi_icon = "{% static 'map/taxi_icon2.png' %}"
+    var taxi_icon_blue = "{% static 'map/taxi_icon2_blue.png' %}"
+</script>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Map</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'map/style.css' %}">
+    <script src="{% static 'map/index.js' %}"></script>
+
+</head>
+
+<body>
+    <h3>My Google Maps Demo {{name_to_add}}</h3>
+    <p>Web para el mapa</p>
+
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key={{API_KEY_MAPS}}&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
