@@ -14,4 +14,3 @@
 ## Student 5
     Name: Jaqueline Farrach Álvarez
     GitHub Username: jaquefarrach
-prueba
